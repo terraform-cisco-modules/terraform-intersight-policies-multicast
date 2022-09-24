@@ -15,6 +15,9 @@ data "intersight_organization_organization" "org_moid" {
 #__________________________________________________________________
 
 resource "intersight_fabric_multicast_policy" "multicast" {
+  depends_on = [
+    data.intersight_organization_organization.org_moid
+  ]
   description             = var.description != "" ? var.description : "${var.name} Multicast Policy."
   name                    = var.name
   querier_ip_address      = var.querier_ip_address
