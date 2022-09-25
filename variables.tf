@@ -36,7 +36,7 @@ variable "querier_ip_address_peer" {
 variable "querier_state" {
   default     = "Disabled"
   description = <<-EOT
-  Administrative state of the IGMP Querier for the VLANs Assigned to this Policy.  Options are:
+    Administrative state of the IGMP Querier for the VLANs Assigned to this Policy.  Options are:
     * Disabled - (Default)
     * Enabled
   EOT
@@ -46,7 +46,7 @@ variable "querier_state" {
 variable "snooping_state" {
   default     = "Enabled"
   description = <<-EOT
-  Administrative State for Snooping for the VLANs Assigned to this Policy.
+    Administrative State for Snooping for the VLANs Assigned to this Policy.
   * Disabled
   * Enabled - (Default)
   EOT
