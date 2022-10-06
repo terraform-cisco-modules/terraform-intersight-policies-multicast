@@ -30,7 +30,7 @@ module "main" {
   source                  = "../.."
   description             = "${var.name} Multicast Policy."
   name                    = var.name
-  organization            = "default"
+  organization            = "terratest"
   querier_ip_address      = "198.18.2.5"
   querier_ip_address_peer = "198.18.2.6"
   querier_state           = "Enabled"
